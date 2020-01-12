@@ -279,6 +279,20 @@ a:hover {
 }
 
 /* Slider */
+.down-arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: scaleY(-50%);
+}
+
+.down-arrow,
+.down-arrow-img {
+    max-height: 43px;
+    max-width: 43px;
+}
+
+/* Custom Added Style */
 
 .home-slider img {
     max-height: 100vh;
@@ -299,19 +313,6 @@ a:hover {
     letter-spacing: 0.07em;
     color: #FFFFFF;
 }
-.down-arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: scaleY(-50%);
-}
-
-.down-arrow,
-.down-arrow-img {
-    max-height: 43px;
-    max-width: 43px;
-}
-
 /* engagingFilms Style */
 .engagingFilms{
     background: #E5E5E5;
@@ -556,6 +557,122 @@ a:hover {
     color: #B92427;
 }
 
+/* NIFF 2020 */
+.niff{
+    background: #E5E5E5;
+}
+.niff form{
+    position: relative;
+    margin: 20px 0 60px 0;
+}
+.niff input[type="text"]{
+    background: #E0E0E0;
+    border-radius: none;
+}
+.niff .search-panel .btn{
+    background: #C4C4C4;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 40px;
+}
+.niff .dropdown-toggle::after {
+    color: black;
+}
+.niff .input-group-btn .search_by{
+    color: black !important;
+}
+.niff .input-group-btn .searchBtn{
+    color: #B92427;
+    border-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 40px;
+}
+.niff .dropdown-menu{
+    background: #C4C4C4;
+    border: none;
+    padding: 10px;
+    margin-top: -2px;
+}
+.niff .input-group-btn button{
+    background: #E0E0E0;
+    border-radius: none;
+}
+.niff .head{
+    position: relative;
+}
+.niff .head::before{
+    position: absolute;
+    content: "";
+    bottom: -80%;
+    left: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 30px;
+    background: #EB222D;
+}
+.niff .container{
+    width: 80% !important;
+    background: white;
+    padding: 20px;
+}
+.niff .text h1 span{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    letter-spacing: 0.035em;
+    color: #B92427;
+}
+.niff .text h1{
+    margin: 0;
+}
+.niff .text h2{
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    margin: 0;
+}
+.niff .card{
+    border: none;
+    margin-bottom: 20px;
+}
+.niff .card-body{
+    padding: 20px 10px 10px 0;
+}
+.niff .card-img-top{
+    height: 258px;
+    object-fit: cover;
+}
+.niff .card .card-body h5{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.niff .card .card-body p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.035em;
+    color: #000000;
+}
+.card{
+    overflow: hidden;
+}
+.card .card-img-top{
+    overflow: hidden;
+    transition: .5s ease;
+}
+.card .card-img-top:hover{
+    transform: scale(1.1);
+}
 /* Responsive */
 
 @media (max-width: 1100px){
@@ -604,7 +721,7 @@ a:hover {
         height: 100px;
         margin-top: 10px;
     }
-    .home-slider .text h1{
+    .home-slider .text h1, .niff .text h1 span{
         font-size: 35px;
     }
     .engagingFilms .head p, .jury .head p{
@@ -616,6 +733,16 @@ a:hover {
     .jury .card p{
         font-size: 15px;
     }
+    .niff .search-panel .btn, .niff input[type="text"],
+    .niff .input-group-btn .searchBtn{
+        font-size: 14px;
+    }
+    .niff .card .card-body h5{
+        font-size: 22px;
+    }
+    .niff .card .card-body p{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 576px){
@@ -624,18 +751,22 @@ a:hover {
         max-height: 25px;
         max-width: 25px;
     }
-    .engagingFilms .container, .jury .container, .committee .container {
-        width: 80% !important;
-        background: white;
-        padding: 20px;
+    .engagingFilms .container, .jury .container, .committee .container, .niff .container {
+        width: 100% !important;
     }
     .home-slider .text{
         width: 150px;
     }
-    .home-slider .text h1{
+    .home-slider .text h1, .niff .text h1 span{
         font-size: 20px;
     }
     .engagingFilms .head p, .jury .head p{
         font-size: 14px;
+    }
+}
+@media (max-width: 400px){
+    .niff .search-panel .btn, .niff input[type="text"],
+    .niff .input-group-btn .searchBtn{
+        font-size: 12px;
     }
 }
