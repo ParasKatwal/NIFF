@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+/* Brand color */
+
+
+/* #363e8f */
+
+*,
+*:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Font styles */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Heading */
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+a,
+a:hover {
+    color: inherit;
+}
+
+.container{
+    width: 80% !important;
+    background: white;
+    padding: 20px;
+}
+
+/* Button Css */
+
+
+/* DO NOT DELETE THIS SECTION */
+
+
+/* .btn-primary:not(:disabled):not(.disabled):active */
+
+.btn {
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-login {
+    padding: 0.5rem;
+}
+
+.btn-signup {
+    padding: 0.5rem;
+    background-color: #363e8f;
+    color: #fff;
+}
+
+.btn-download {
+    padding: 6px 45px;
+    font-size: 14px;
+    background-color: #3cb46e;
+}
+
+.btn-other {
+    background-color: #fff;
+    color: #999;
+    border-color: #ddd;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+.btn-tags {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    color: #999 !important;
+    border-radius: 4px;
+}
+
+.modal-header .close {
+    background-color: #999;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    opacity: 1;
+    text-shadow: none;
+    color: #fff;
+}
+
+
+/* Common CSS */
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.top-header {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 1px rgba(1, 0, 0, 0.1);
+}
+
+.custom_container {
+    max-width: 1425px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 90px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.title-wrap {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.title-wrap::after {
+    height: 3px;
+    width: 50px;
+    content: "";
+    position: absolute;
+    background-color: #333;
+    left: 50%;
+    bottom: 25%;
+    margin-left: -25px;
+}
+
+.title-wrap h1,
+.title-wrap h2,
+.title-wrap h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.page-title {
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+
+/* .page-title::after{
+  height: 3px;
+  width: 50px;
+  content: "";
+  position: absolute;
+  background-color: #333;
+  left: 50%;
+  bottom: 30%;
+  margin-left: -25px;
+} */
+
+.page-title h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.page-title p {
+    font-size: 16px;
+}
+
+.page-title p.result-title {
+    margin-bottom: 2px;
+}
+
+.page-title p.other-tags {
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-tags a {
+    margin: 5px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+/* ============================ STLYES =============================== */
+
+
+/* Navbar */
+
+.header-section {
+    position: relative;
+}
+
+.home-slider {
+    width: 100%;
+}
+
+.navbar {
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;  /* remove the gap so it doesn't close */
+}
+
+.header-section .navbar-toggler{
+    margin-left: 20px;
+}
+
+/* Slider */
+
+.home-slider img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.home-slider .text{
+    position: absolute;
+    bottom: 10%;
+    width: 251px;
+    left: 10%;
+}
+.home-slider .text h1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.down-arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: scaleY(-50%);
+}
+
+.down-arrow,
+.down-arrow-img {
+    max-height: 43px;
+    max-width: 43px;
+}
+
+/* engagingFilms Style */
+.engagingFilms{
+    background: #E5E5E5;
+}
+.engagingFilms .head{
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    margin: 15px 0;
+}
+.engagingFilms .head p{
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.engagingFilms .head::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background: #EB222D;
+}
+.engagingFilms .head::after{
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 30px;
+    height: 2px;
+    background: #EB222D;
+}
+.engagingFilms .card{
+    border: none !important;
+}
+.engagingFilms .card-body{
+    padding-left: 0 !important;
+    padding-top: 5px !important;
+}
+.engagingFilms .card .card-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+.engagingFilms .card span{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.engagingFilms .card .time{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 0;
+    margin-top: 5px;
+}
+.engagingFilms .card .directed span{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-transform: none;
+}
+.engagingFilms .card .directed span.name{
+    font-weight: normal;
+    color: #B92427;
+}
+
+/* Jury */
+.jury{
+    background: #E5E5E5;
+}
+.jury .section{
+    position: relative;
+    margin-bottom: 40px;
+}
+.jury .section:last-child {
+    margin-bottom: 0;
+}
+.jury .section:last-child::before {
+    display: none;
+}
+.jury .section::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    background: #B92427;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.jury .head{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.jury .head::before{
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    height: 3px;
+    width: 50px;
+    background: #B92427;
+}
+.jury .head p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    color: #B92427;
+}
+.jury .card{
+    border: none;
+    margin-bottom: 20px;
+}
+.jury .card-body{
+    padding: 0 10px 10px 20px;
+}
+.jury .card-img{
+    min-height: 222px;
+    object-fit: cover;
+}
+.jury .card .card-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+.jury .card .director{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.jury .card p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 990px) { 
+    .down-arrow,
+    .down-arrow-img {
+       z-index: 0;
+    }
+    .header-section .navbar-nav{
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        background: #E5E5E5;
+        position: relative;
+        z-index: 9999 !important;
+    }
+    .header-section .navbar-nav .nav-link{
+        font-size: 16px;
+        padding: 15px 0;
+        color: black !important;
+        z-index: 9999 !important
+    }
+}
+
+@media (max-width: 768px) { 
+    
+    .home-slider .text h1{
+        font-size: 35px;
+    }
+    .engagingFilms .head p, .jury .head p{
+        font-size: 16px;
+    }
+    .jury .card-body{
+        padding: 10px 10px 10px 0px;
+    }
+    .jury .card p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px){
+    .down-arrow,
+    .down-arrow-img {
+        max-height: 25px;
+        max-width: 25px;
+    }
+    .container{
+        width: 100% !important;
+    }
+    .home-slider .text{
+        width: 150px;
+    }
+    .home-slider .text h1{
+        font-size: 20px;
+    }
+    .engagingFilms .head p, .jury .head p{
+        font-size: 14px;
+    }
+}
