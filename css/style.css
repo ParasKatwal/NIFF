@@ -54,12 +54,6 @@ a:hover {
     color: inherit;
 }
 
-.container{
-    width: 80% !important;
-    background: white;
-    padding: 20px;
-}
-
 /* Button Css */
 
 
@@ -322,6 +316,11 @@ a:hover {
 .engagingFilms{
     background: #E5E5E5;
 }
+.engagingFilms .container{
+    width: 80% !important;
+    background: white;
+    padding: 20px;
+}
 .engagingFilms .head{
     text-align: center;
     position: relative;
@@ -399,6 +398,11 @@ a:hover {
 /* Jury */
 .jury{
     background: #E5E5E5;
+}
+.jury .container{
+    width: 80% !important;
+    background: white;
+    padding: 20px;
 }
 .jury .section{
     position: relative;
@@ -479,6 +483,11 @@ a:hover {
 /* Committee */
 .committee{
     background: #E5E5E5;
+}
+.committee .container{
+    width: 80% !important;
+    background: white;
+    padding: 20px;
 }
 .committee .section{
     margin-bottom: 40px;
@@ -615,8 +624,10 @@ a:hover {
         max-height: 25px;
         max-width: 25px;
     }
-    .container{
-        width: 100% !important;
+    .engagingFilms .container, .jury .container, .committee .container {
+        width: 80% !important;
+        background: white;
+        padding: 20px;
     }
     .home-slider .text{
         width: 150px;
